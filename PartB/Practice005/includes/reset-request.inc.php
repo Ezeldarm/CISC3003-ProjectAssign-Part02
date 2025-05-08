@@ -19,8 +19,9 @@ if (isset($_POST['reset-request-submit'])) {
   // Then we create the URL link which we will send the user by mail so they can reset their password.
   // Notice that we convert the "token" to hexadecimals here as well, to make the URL usable.
 
-  $url = "www.mmtuts.net/forgottenpwd/create-new-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
-
+  // $url = "www.mmtuts.net/forgottenpwd/create-new-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
+  $url = "http://localhost/cisc3003-dc326264/CISC3003-ProjectAssign-Part02/PartB/Practice001/create-new-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
+  
   // Then we need to define when the tokens should expire. We do this for security reasons to make sure the same token can't be used for more than an hour.
 
   // Then we set the timestamp and add another hour to the current time, and then pass it into the format we defined.
@@ -78,8 +79,8 @@ if (isset($_POST['reset-request-submit'])) {
 
   // Headers
   // Headers
-  $headers = "From: mmtuts <usemmtuts@gmail.com>\r\n";
-  $headers .= "Reply-To: usemmtuts@gmail.com\r\n";
+  $headers = "From: MyTry <cowmeat@163.com>\r\n";
+  $headers .= "Reply-To: cowmeat@163.com\r\n";
   $headers .= "Content-type: text/html\r\n";
 
   // Send e-mail

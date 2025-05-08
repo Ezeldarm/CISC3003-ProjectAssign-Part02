@@ -20,7 +20,7 @@ if (isset($_POST['reset-request-submit'])) {
   // Notice that we convert the "token" to hexadecimals here as well, to make the URL usable.
 
   // $url = "www.mmtuts.net/forgottenpwd/create-new-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
-  $url = "http://localhost/cisc3003-dc326264/CISC3003-ProjectAssign-Part02/PartB/Practice001/create-new-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
+  $url = "http://localhost/cisc3003-dc326264/CISC3003-ProjectAssign-Part02/PartB/Practice005/create-new-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
   
   // Then we need to define when the tokens should expire. We do this for security reasons to make sure the same token can't be used for more than an hour.
 

@@ -1,4 +1,4 @@
-# Shopping Cart System
+# Part A : Shopping Cart System
 
 ## Overview
 This is a PHP-based shopping cart system that allows users to browse products, add them to a cart, manage cart items, place orders, and view order details. The system includes features for adding products, checking out, and tracking order status. It uses a MySQL database to store product, cart, and order information, and incorporates a simple user identification system via cookies.

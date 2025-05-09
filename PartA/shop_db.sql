@@ -22,11 +22,9 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
 --
 -- Table structure for table `cart`
 --
-
 CREATE TABLE `cart` (
   `id` varchar(20) NOT NULL,
   `user_id` varchar(20) NOT NULL,
@@ -36,11 +34,9 @@ CREATE TABLE `cart` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
-
 --
 -- Table structure for table `orders`
 --
-
 CREATE TABLE `orders` (
   `id` varchar(20) NOT NULL,
   `user_id` varchar(20) NOT NULL,
@@ -58,11 +54,9 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
-
 --
 -- Table structure for table `products`
 --
-
 CREATE TABLE `products` (
   `id` varchar(20) NOT NULL,
   `name` varchar(50) NOT NULL,
